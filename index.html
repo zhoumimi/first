@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 样式表 -->
+	<!-- right-select-css -->
+	<link rel="stylesheet" type="text/css" href="css/rightSelect.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	
+	<!-- main-select-css -->
+	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<!-- left-select-css -->
+	<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+
+	<!-- js库 -->
+ 	
+ 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+ 	<!-- 检测当前浏览器是否支持CSS3的特性 -->
+	<script src="js/modernizr.custom.js"></script>	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.js"></script>
+	
+	
+</head>
+	<body>
+		<div class="container">
+			<div id="splitlayout" class="splitlayout">
+				<div class="intro">
+				<!-- left -->
+					<div class="side side-left">						
+						<div class="intro-content">
+							<div class="profile"><img src="img/profile1.jpg" alt="profile1"></div>
+							<h1><span> life</span><span>Enjoy my time</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<!-- right -->
+					<div class="side side-right">
+						<div class="intro-content">
+							<div class="profile"><img src="img/profile2.jpg" alt="profile2"></div>
+							<h1><span>life </span><span> Developer</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+				</div>
+				<!-- right/intro -->
+				<div class="page page-right">
+					<div class="page-inner">
+						<section>
+
+<style type="text/css">
+
+.history-date h2{background:#fff url(img/icon06.gif) no-repeat 158px 0;height:59px;font-size:25px;font-family:微软雅黑;font-weight:normal;padding-left:45px;margin-bottom:74px; }
+
+
+</style>
+<script type="text/javascript">
+$(function(){
+	systole();
+});
+
+function systole(){
+	if(!$(".history").length){
+		return;
+	}
+	var $warpEle = $(".history-date"),
+		$targetA = $warpEle.find("h2 a,ul li dl dt a"),
+		parentH,
+		eleTop = [];
+	
+	parentH = $warpEle.parent().height();
+	$warpEle.parent().css({"height":59});
+	
+	setTimeout(function(){
+		
+		$warpEle.find("ul").children(":not('h2:first')").each(function(idx){
+			eleTop.push($(this).position().top);
+			$(this).css({"margin-top":-eleTop[idx]}).children().hide();
+		}).animate({"margin-top":0}, 1600).children().fadeIn();
+
+		$warpEle.parent().animate({"height":parentH}, 2600);
+
+		$warpEle.find("ul").children(":not('h2:first')").addClass("bounceInDown").css({"-webkit-animation-duration":"2s","-webkit-animation-delay":"0","-webkit-animation-timing-function":"ease","-webkit-animation-fill-mode":"both"}).end().children("h2").css({"position":"relative"});
+		
+	}, 600);
+
+	$targetA.click(function(){
+		$(this).parent().css({"position":"relative"});
+		$(this).parent().siblings().slideToggle();
+		$warpEle.parent().removeAttr("style");
+		return false;
+	});
+};
+</script>
+
+<div class="demo">
+	<div class="history">
+		<div class="history-date">
+			<ul>
+				<h2 class="first">
+					<a href="#nogo">2012年</a><img src="" alt="学习历程" />
+					<a class="more-history" href="http://www.17sucai.com/">查看更新日志>></a>
+				</h2>
+				<li class="green">
+					<h3>10.08<span>2012</span></h3>
+					<dl>
+						<dt>大字<span>小子</span></dt>
+					</dl>
+				</li>
+				<li>
+					<h3>07.19<span>2012</span></h3>
+					<dl>
+						<dt>升级极速内核到20.0<span>HTML5支持度全球最好，达到469分，测试页面： </span></dt>
+						<A href="http://html5test.com/" target="_blank">http://html5test.com/</A>
+					</dl>
+				</li>
+				<li>
+					<h3>07.02<span>2012</span></h3>
+					<dl>
+						<dt>升级极速内核到19.0<span>支持网络摄像头，浏览器可直接访问摄像头</span></dt>
+					</dl>
+				</li>
+				<li class="green">
+					<h3>06.27<span>2012</span></h3>
+					<dl>
+						<dt>发布国内首个HTML5实验室<span>大力推广HTML5</span></dt>
+					</dl>
+				</li>
+				<li>
+					<h3>06.15<span>2012</span></h3>
+					<dl>
+						<dt>新增了下载文件前扫描下载链接安全性的功能</dt>
+					</dl>
+				</li>
+				<li>
+					<h3>06.05<span>2012</span></h3>
+					<dl>
+						<dt>W3C联盟首席执行官访华，首站访问360公司</dt>
+					</dl>
+				</li>
+				<li>
+					<h3>05.12<span>2012</span></h3>
+					<dl>
+						<dt>360受邀出席W3C联盟成员见面会议</dt>
+					</dl>
+				</li>
+				<li>
+					<h3>05.11<span>2012</span></h3>
+					<dl>
+						<dt>升级极速内核到18.0<span>新增多用户使用浏览器的功能</span></dt>
+					</dl>
+				</li>
+				<li>
+					<h3>05.03<span>2012</span></h3>
+					<dl>
+						<dt>360极速浏览器用户数突破5000万，活跃用户超2000万</dt>
+					</dl>
+				</li>
+				<li>
+					<h3>03.08<span>2012</span></h3>
+					<dl>
+						<dt>升级极速内核到17.0，提升浏览器速度、增强安全性<span>新增HTTP管线化技术，大幅提升网页加载速度</span></dt>
+					</dl>
+				</li>
+				<li>
+					<h3>01.29<span>2012</span></h3>
+					<dl>
+						<dt>国内率先加入W3C联盟HTML工作组，参与HTML5标准制定</span></dt>
+					</dl>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+
+
+						</section>
+					</div>
+					<!-- /page-inner -->
+				</div>
+				<!-- /page-right -->
+				<div class="page page-left">
+					<div class="page-inner">
+						
+							
+
+	<section id="cd-timeline" class="cd-container">
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div><!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>17素材网 1</h2>
+				<p>1</p>
+				<a href="http://www.sucaijiayuan.com" class="cd-read-more">阅读更多</a>
+				<span class="cd-date">Jan 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="img/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>17素材网 2</h2>
+				<p>2</p>
+				<a href="http://www.sucaijiayuan.com" class="cd-read-more">阅读更多</a>
+				<span class="cd-date">Jan 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>17素材网 3</h2>
+				<p>3</p>
+				<a href="http://www.sucaijiayuan.com" class="cd-read-more">阅读更多</a>
+				<span class="cd-date">Jan 24</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		
+
+
+						</section>
+					</div>
+					<!-- /page-inner -->
+				</div><!-- /page-left -->
+				<a href="#" class="back back-right" title="back to intro">&rarr;</a>
+				<a href="#" class="back back-left" title="back to intro">&larr;</a>
+			</div><!-- /splitlayout -->
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/cbpSplitLayout.js"></script>
+		<script>
+$(function(){
+	var $timeline_block = $('.cd-timeline-block');
+	//hide timeline blocks which are outside the viewport
+	$timeline_block.each(function(){
+		if($(this).offset().top > $(window).scrollTop()+$(window).height()*0.75) {
+			$(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		}
+	});
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		$timeline_block.each(function(){
+			if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) {
+				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+			}
+		});
+	});
+});
+</script>
+	</body>
+</html>
