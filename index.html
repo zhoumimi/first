@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="zh" class="no-js">
-<head>
-	<meta charset="UTF-8" />
+<html class=" js csstransforms" lang="zh"><head>
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 样式表 -->
 	<!-- right-select-css -->
-	<link rel="stylesheet" type="text/css" href="css/rightSelect.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/rightSelect.css">
+	<link rel="stylesheet" type="text/css" href="css/demo.css">
 	
 	<!-- main-select-css -->
-	<link rel="stylesheet" type="text/css" href="css/component.css"/>
+	<link rel="stylesheet" type="text/css" href="css/component.css">
 	<!-- left-select-css -->
-	<link rel="stylesheet" type="text/css" href="css/timeline.css" />
+	<link rel="stylesheet" type="text/css" href="css/timeline.css">
 
 	<!-- js库 -->
  	
@@ -26,7 +25,7 @@
 </head>
 	<body>
 		<div class="container">
-			<div id="splitlayout" class="splitlayout">
+			<div id="splitlayout" class="splitlayout close-right reset-layout">
 				<div class="intro">
 				<!-- left -->
 					<div class="side side-left">						
@@ -77,6 +76,7 @@
 </style>
 <script type="text/javascript">
 $(function(){
+
 	systole();
 });
 
@@ -92,17 +92,19 @@ function systole(){
 	parentH = $warpEle.parent().height();
 	$warpEle.parent().css({"height":59});
 	
+
+
 	setTimeout(function(){
 		
 		$warpEle.find("ul").children(":not('h2:first')").each(function(idx){
 			eleTop.push($(this).position().top);
-			$(this).css({"margin-top":-eleTop[idx]}).children().hide();
+		$(this).css({"margin-top":-eleTop[idx]}).children().hide();
 		}).animate({"margin-top":0}, 1600).children().fadeIn();
 
 		$warpEle.parent().animate({"height":parentH}, 2600);
 
 		$warpEle.find("ul").children(":not('h2:first')").addClass("bounceInDown").css({"-webkit-animation-duration":"2s","-webkit-animation-delay":"0","-webkit-animation-timing-function":"ease","-webkit-animation-fill-mode":"both"}).end().children("h2").css({"position":"relative"});
-		
+		 
 	}, 600);
 
 	$targetA.click(function(){
@@ -118,58 +120,58 @@ function systole(){
 	<div class="history">
 		<div class="history-date">
 			<ul>
-				<h2 class="first">
-					<a href="#nogo">2015年</a><img src="" alt="混生APP学习历程" />
+				<h2 class="first" style="position: relative;">
+					<a href="#nogo">2015年</a><img src="" alt="混生APP学习历程">
 					
 				</h2>
-				<li class="green">
-					<h3>06.29<span>2015</span></h3>
-					<dl>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">06.29<span>2015</span></h3>
+					<dl style="display: block;">
 						<dt>初识APICloud<span>APICloud是中国领先的“云端一体”的移动应用云服务提供商,缩短APP开发时间。</span></dt>
 					</dl>
 				</li>
 
-				<li class="green">
-					<h3>08.29<span>2015</span></h3>
-					<dl>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">08.29<span>2015</span></h3>
+					<dl style="display: block;">
 						<a href="" target="_blank">放弃？坚持</a>
 					</dl>
 				</li>
 				
-				<li class="green">
-					<h3>11.10<span>2016</span></h3>
-					<dl>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">11.10<span>2016</span></h3>
+					<dl style="display: block;">
 						<dt>学习心路历程<span>从一名小白到入门 </span></dt>
-						<A href="" target="_blank">
-						越努力越幸运</A>
+						<a href="" target="_blank">
+						越努力越幸运</a>
 					</dl>
 				</li>
 				
 				
-				<li class="green">
-					<h3>11.5<span>2016</span></h3>
-					<dl>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">11.5<span>2016</span></h3>
+					<dl style="display: block;">
 						
 						<a href="html/app_mod1.html" target="_self">
 						CXTapp开发之路</a>
 					</dl>
-					</dl>
+					
 				</li>
-				<li class="green">
-					<h3>05.06<span>2017</span></h3>
-					<dl>
-						<A href="">“ServiceCar”app开发之路</A>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">05.06<span>2017</span></h3>
+					<dl style="display: block;">
+						<a href="">“ServiceCar”app开发之路</a>
 					</dl>
-				</li>
-				<li class="green">
-					<h3>05.28<span>2017</span></h3>
-					<dl>
+				<div></div></li>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">05.28<span>2017</span></h3>
+					<dl style="display: block;">
 						<a href="">考研面对面app开发之路</a>
 					</dl>
 				</li>
-				<li class="green">
-					<h3>06.15<span>2017</span></h3>
-					<dl>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">06.15<span>2017</span></h3>
+					<dl style="display: block;">
 						<a href="">never stop study<span>你不知道什么时候用得上</span></a>
 					</dl>
 				</li>
@@ -178,53 +180,106 @@ function systole(){
 
 
 			<ul>
-				<h2 class="first">
-					<a href="#nogo">2015年</a><img src="" alt="java学习历程" />
+				<h2 class="first bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; position: relative;">
+					<a href="#nogo" style="display: inline-block;">2015年</a><img src="" alt="java学习历程" style="display: inline;">
 					
 				</h2>
-				<li class="green">
-					<h3>08.08<span>2015</span></h3>
-					<dl>
-						<dt>java基础<span>1</span></dt>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">08.08<span>2015</span></h3>
+					<dl style="display: block;">
+						<dt>java基础<span></span></dt>
+						<a href="">枯燥的坚持</a>
 					</dl>
 				</li>
 
-				<li class="green">
-					<h3>04.29<span>2016</span></h3>
-					<dl>
-						<dt>放弃？坚持<span>关于如何学习</span></dt>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">04.29<span>2016</span></h3>
+					<dl style="display: block;">
+						<dt>一路走来<span>关于如何学习</span></dt>
+						<a href="">给自己一个理由</a>
 					</dl>
 				</li>
 				
-			<li class="green">
-					<h3>08.08<span>2016</span></h3>
-					<dl>
-						<dt>android<span>1</span></dt>
+			<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">08.08<span>2016</span></h3>
+					<dl style="display: block;">
+						<dt>android<span>Hello word</span></dt>
+						<a href="">遇到的问题</a>
 					</dl>
 				</li>
 			
-			<li class="green">
-					<h3>??.??<span>2016</span></h3>
-					<dl>
-						<dt>java小运用<span>1</span></dt>
+			<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">??.??<span>2016</span></h3>
+					<dl style="display: block;">
+						<dt>java小运用<span>xxxx系统1.0</span></dt>
+						<a href="">那一刻我觉得一切都是值得的</a>
 					</dl>
 				</li>	
 
-				<li class="green">
-					<h3>07.28<span>2017</span></h3>
-					<dl>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">07.28<span>2017</span></h3>
+					<dl style="display: block;">
 						<dt>javaWEB<span>
 						网站学习搭建</span></dt>
-					</dl>
-				</li>
-				<li class="green">
-					<h3>??.??<span>2017</span></h3>
-					<dl>
-						<dt>数据库<span>
-						一些数据库的简单运用</span></dt>
+						<a href="">思想的转变</a>
 					</dl>
 				</li>
 			</ul>
+
+			<ul>
+				<h2 class="first bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; position: relative;">
+					<a href="#nogo" style="display: inline-block;">2016年</a><img src="" alt="数据库学习历程" style="display: inline;">
+					
+				</h2>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">08.08<span>2016</span></h3>
+					<dl style="display: block;">
+						<dt>数据库技术<span></span></dt>
+						<a href=""></a>
+					</dl>
+				</li>
+
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">10.11<span>2016</span></h3>
+					<dl style="display: block;">
+						<dt>jdbc<span>Sqlserver 2008</span></dt>
+						<a href="">从curd到单独的.dao</a>
+					</dl>
+				</li>
+				
+			<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">02.18<span>2017</span></h3>
+					<dl style="display: block;">
+						<dt>netBeans<span></span></dt>
+						<a href="">张三--男--19</a>
+					</dl>
+				</li>
+			
+			<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">??.??<span>2017</span></h3>
+					<dl style="display: block;">
+						<dt>MySQL<span>localhost -u  -p</span></dt>
+						<a href="">mysql connector java x.x.x-bin.jar</a>
+					</dl>
+				</li>	
+
+				
+			</ul>
+
+			<ul>
+				<h2 class="first bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; position: relative;">
+					<a href="#nogo" style="display: inline-block;">2017年</a><img src="" alt="未完，待续-----" style="display: inline;">
+					
+				</h2>
+				<li class="green bounceInDown" style="margin-top: 0px; animation-duration: 2s; animation-timing-function: ease; animation-fill-mode: both; display: none;">
+					<h3 style="display: block;">??.??<span>????</span></h3>
+					<dl style="display: block;">
+						<dt>?????<span></span>????</dt>
+						
+					</dl>
+				</li>
+
+			</ul>	
 		</div>
 
 
@@ -237,7 +292,7 @@ function systole(){
 		
 
 
-						</section>
+						</div></section>
 					</div>
 					<!-- /page-inner -->
 				</div>
@@ -265,11 +320,11 @@ function systole(){
 
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-movie">
+			<div class="cd-timeline-img cd-movie is-hidden">
 				<img src="img/cd-icon-movie.svg" alt="Movie">
 			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content is-hidden">
 				<h2>雕刻</h2>
 				<p>2</p>
 				<a href="" class="cd-read-more">阅读更多</a>
@@ -278,11 +333,11 @@ function systole(){
 		</div> <!-- cd-timeline-block -->
 
 		<div class="cd-timeline-block">
-			<div class="cd-timeline-img cd-picture">
+			<div class="cd-timeline-img cd-picture is-hidden">
 				<img src="img/cd-icon-picture.svg" alt="Picture">
 			</div> <!-- cd-timeline-img -->
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content is-hidden">
 				<h2>画画</h2>
 				<p>3</p>
 				<a href="" class="cd-read-more">阅读更多</a>
@@ -297,8 +352,8 @@ function systole(){
 					</div>
 					<!-- /page-inner -->
 				</div><!-- /page-left -->
-				<a href="#" class="back back-right" title="back to intro">&rarr;</a>
-				<a href="#" class="back back-left" title="back to intro">&larr;</a>
+				<a href="#" class="back back-right" title="back to intro">→</a>
+				<a href="#" class="back back-left" title="back to intro">←</a>
 			</div><!-- /splitlayout -->
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
@@ -322,5 +377,6 @@ $(function(){
 	});
 });
 </script>
-	</body>
-</html>
+	
+
+</body></html>
